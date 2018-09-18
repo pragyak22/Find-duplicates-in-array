@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+main()
+{
+    int a[4][4],i,j;
+    
+    pintf("Enter triangular matrix elements(i.e. diagonal elements=1): \n");
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            scanf("%d",a[i][j]);
+        }
+    }
+    
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            if(i!=j)
+            {
+                a[i][j]=a[i][j]-2*a[i][j];
+            }
+        }
+    }
+    
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            printf("Inverse is: \t");
+        }
+        printf("\n");
+    }
+
+    
+}
